@@ -17,3 +17,25 @@ If you'd like to contribute to this project, please feel free to open a pull req
 
 License
 This project is licensed under the MIT license.
+
+
+Encurtador de URL
+Este é um projeto de encurtador de URL simples que utiliza a API do TinyURL para encurtar uma URL longa em uma URL curta.
+
+Recursos
+Entrada de URL longa
+Botão de encurtar URL
+Exibição da URL curta resultante com o site de origem ao lado em itálico
+Contador de URLs encurtadas até o momento, com início em 3.345
+Layout responsivo e estilização com CSS moderno
+Como usar
+Clone ou baixe o repositório para o seu computador
+Abra o arquivo HTML em seu navegador
+Insira a URL longa desejada no campo de entrada
+Clique no botão "Encurtar URL"
+Verifique a URL curta resultante e o contador de URLs encurtadas até o momento
+Documentação do código
+O código é documentado com comentários explicando cada passo de forma clara e didática.
+
+Nota
+Este projeto foi desenvolvido apenas com fins educacionais e não deve ser usado em produção sem uma revisão e teste adequados. A API do TinyURL pode mudar ou descontinuar a qualquer momento, afetando o funcionamento do projeto. Além disso, o uso de APIs externas em aplicações de produção pode implicar questões de segurança e privacidade, que devem ser consideradas cuidadosamente.
