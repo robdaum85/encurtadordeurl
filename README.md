@@ -1,3 +1,14 @@
+* Melhorias pelos próximos dias:
+
+Adicionar validação de entrada para verificar se a URL inserida é válida antes de chamar a API.
+Adicionar suporte para encurtar várias URLs ao mesmo tempo.
+Armazenar as URLs encurtadas em um banco de dados para permitir o acesso posterior.
+Adicionar estatísticas, como o número de cliques em cada URL encurtada.
+Adicionar uma opção para personalizar a URL encurtada ao invés de usar a gerada automaticamente pela API.
+
+
+
+
 Shorten URL
 This is a simple web application that allows you to shorten a long URL using the TinyURL API.
 
