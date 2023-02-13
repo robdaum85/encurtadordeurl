@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: lightblue;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      #shortURL {
+        font-size: 16px;
+        margin-top: 20px;
+        word-break: break-all;
+      }
+      
+      #shortURL strong {
+        font-weight: bold;
+      }
+      
+      #shortURL em {
+        font-style: italic;
+      }
+    </style>
+    <script>
+      var counter = 3345;
+      
+      function shortenURL() {
+        var longURL = document.getElementById("longURL").value;
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://tinyurl.com/api-create.php?url=" + encodeURIComponent(longURL), true);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+            var shortURL = xhr.responseText;
+            document.getElementById("shortURL").innerHTML = '<strong>' + shortURL + '</strong> (origem: <em>' + longURL + '</em>)';
+            counter++;
+            document.getElementById("counter").innerHTML = counter;
+          }
+        };
+        xhr.send();
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="longURL" placeholder="Insira a URL longa aqui">
+    <button onclick="shortenURL()">Encurtar URL</button>
+    <br><br>
+    URL encurtada: <span id="shortURL"></span>
+    <br><br>
+    <strong>Total de URLs encurtadas até o momento: </strong><span id="counter">3345</span>
+  </body>
+</html>
