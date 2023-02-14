@@ -1,53 +1,58 @@
-* Melhorias pelos próximos dias:
+# Encurtab - Encurta Que ele abre 
+> Precisa encurtar aqueles malditos links gigantes de torrent e afins, Encurta aqui que ele abre!
 
-*Adicionar validação de entrada para verificar se a URL inserida é válida antes de chamar a API.
-*Adicionar suporte para encurtar várias URLs ao mesmo tempo. CHECK
-*Armazenar as URLs encurtadas em um banco de dados para permitir o acesso posterior.
-*Adicionar estatísticas, como o número de cliques em cada URL encurtada. CHECK
-*Adicionar uma opção para personalizar a URL encurtada ao invés de usar a gerada automaticamente pela API.
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
 
+De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
 
-
-
-
-Shorten URL
-This is a simple web application that allows you to shorten a long URL using the TinyURL API.
-
-Usage
-Enter your long URL in the input field.
-Click the "Shorten URL" button.
-The shortened URL will be displayed below, with the original source website in italic next to it.
-The number of shortened URLs created will be updated and displayed on the page.
-Technologies
-The application is built using HTML, CSS and JavaScript. The CSS styles are used to make the page visually appealing and responsive, while the JavaScript code communicates with the TinyURL API to retrieve the shortened URL.
-
-Setup
-To run the application locally, simply clone the repository and open the HTML file in your browser.
-
-Contributing
-If you'd like to contribute to this project, please feel free to open a pull request with your changes.
-
-License
-This project is licensed under the MIT license.
+![](../header.png)
 
 
-Encurtador de URL
-Este é um projeto de encurtador de URL simples que utiliza a API do TinyURL para encurtar uma URL longa em uma URL curta.
+## Exemplo de uso
 
-Recursos
-Entrada de URL longa
-Botão de encurtar URL
-Exibição da URL curta resultante com o site de origem ao lado em itálico
-Contador de URLs encurtadas até o momento, com início em 3.345
-Layout responsivo e estilização com CSS moderno
-Como usar
-Clone ou baixe o repositório para o seu computador
-Abra o arquivo HTML em seu navegador
-Insira a URL longa desejada no campo de entrada
-Clique no botão "Encurtar URL"
-Verifique a URL curta resultante e o contador de URLs encurtadas até o momento
-Documentação do código
-O código é documentado com comentários explicando cada passo de forma clara e didática.
+Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado. Adicione blocos de códigos e, se necessário, screenshots.
 
-Nota
-Este projeto foi desenvolvido apenas com fins educacionais e não deve ser usado em produção sem uma revisão e teste adequados. A API do TinyURL pode mudar ou descontinuar a qualquer momento, afetando o funcionamento do projeto. Além disso, o uso de APIs externas em aplicações de produção pode implicar questões de segurança e privacidade, que devem ser consideradas cuidadosamente.
+_Para mais exemplos, consulte a [Wiki][wiki]._ 
+
+## Configuração para Desenvolvimento
+
+Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
+
+```sh
+make install
+npm test
+```
+
+## Histórico de lançamentos
+
+* 0.0.1
+    * MUDANÇA: *Adicionar suporte para encurtar várias URLs ao mesmo tempo. CHECK
+
+    * 0.0.2
+    * *Adicionar estatísticas, como o número de cliques em cada URL encurtada. CHECK
+
+
+## Meta
+
+Seu Nome – [@SeuNome](https://twitter.com/...) – SeuEmail@exemplo.com
+
+Distribuído sob a licença XYZ. Veja `LICENSE` para mais informações.
+
+[https://github.com/yourname/github-link](https://github.com/othonalberto/)
+
+## Contributing
+
+1. Faça o _fork_ do projeto (<https://github.com/yourname/yourproject/fork>)
+2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
+3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
+4. _Push_ (`git push origin feature/fooBar`)
+5. Crie um novo _Pull Request_
+
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/seunome/seuprojeto/wiki
